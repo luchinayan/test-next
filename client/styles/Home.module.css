@@ -1,0 +1,17 @@
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: .1rem solid #eee;
+    padding: 5rem 10rem;
+}
+.links > a{
+    text-decoration: none;
+    color: #ffa726;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    transition: .3s;
+}
+.links> a:hover{
+    color: #5e35b1;
+}

@@ -1,0 +1,16 @@
+.home {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+
+}
+
+.home > a {
+    text-decoration: none;
+    color: #5e35b1;
+    transition: .3s;
+}
+
+.home > a:hover {
+    color: #ffa726;
+}
