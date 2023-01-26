@@ -1,30 +1,32 @@
-.inputContainer{
-    margin: 5rem 0 0 0 ;
+.inputContainer {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
-.author{
-    font-size: 2rem;
-}
-.text{
+
+.input {
+    width: 15%;
     margin: 1rem 0;
     font-size: 2rem;
 }
-.Btn{
+
+.addBtn {
     background-color: #5e35b1;
     border: none;
     color: white;
-    padding: .5rem .8rem;
+    padding: .7rem 2rem;
     text-decoration: none;
     font-size: 1rem;
     cursor: pointer;
     transition: .5s;
     border-radius: .3rem;
 }
-.Btn:hover{
+
+.addBtn:hover {
     background-color: #ffa726;
 }
+
 .errMsg {
     margin: 1rem;
     border: 0.3rem solid #ffa726;
@@ -35,6 +37,7 @@
     color: white;
     animation: color-change 1.5s linear infinite;
 }
+
 @keyframes color-change {
     from {
         background-color: #5e35b1;

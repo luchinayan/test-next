@@ -1,4 +1,4 @@
-import React, {useInsertionEffect, useState} from 'react';
+import React, {useState} from 'react';
 import s from '../styles/MessagesBoard.module.css'
 import MessageForm from "@/components/messageForm";
 

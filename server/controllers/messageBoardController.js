@@ -1,13 +1,24 @@
+const ApiError = require("../error/ApiError");
+
 class MessageBoardController {
     messages = [{text: "Hello World", author: 'Node JS'}]
 
-    addMessage=(req, res)=> {
-        const message = req.body
-        this.messages.unshift({text: message.text, author: message.author})
-        res.json(this.messages)
+    addMessage = (req, res, next) => {
+        try {
+            const message = req.body
+            this.messages.unshift({text: message.text, author: message.author})
+            res.json(this.messages)
+        } catch (e) {
+            next(ApiError.BadRequest(e))
+        }
+
     }
-    getMessages=(req, res)=> {
-        res.json(this.messages)
+    getMessages = (req, res, next) => {
+        try {
+            res.json(this.messages)
+        } catch (e) {
+            next(ApiError.BadRequest(e))
+        }
     }
 }
 

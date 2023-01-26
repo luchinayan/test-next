@@ -6,6 +6,7 @@ const Header = () => {
     return (
         <div className={s.home}>
             <Link href='/'>Home</Link>
+
         </div>
     );
 };

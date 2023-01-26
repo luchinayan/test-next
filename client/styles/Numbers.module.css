@@ -1,0 +1,27 @@
+.row,.tableNames{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.tableNames>*{
+    margin: 5rem 0 0 0 ;
+    font-size: 2rem;
+    background-color: #eeeeee;
+}
+.lastAdded {
+    border-right: .1rem solid #5e35b1;
+    border-bottom: .1rem solid #5e35b1;
+    padding: 0.5rem;
+}
+.prevNumber{
+    border-bottom: .1rem solid #5e35b1;
+    border-right: .1rem solid #5e35b1;
+    padding: 0.5rem;
+}
+
+.average{
+    border-bottom: .1rem solid #5e35b1;
+    padding: 0.5rem;
+}
