@@ -3,7 +3,10 @@ class MessageBoardController {
 
     addMessage=(req, res)=> {
         const message = req.body
-        this.messages.push({text: message.text, author: message.author})
+        this.messages.unshift({text: message.text, author: message.author})
+        res.json(this.messages)
+    }
+    getMessages=(req, res)=> {
         res.json(this.messages)
     }
 }

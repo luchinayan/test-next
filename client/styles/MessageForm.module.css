@@ -1,0 +1,27 @@
+.inputContainer{
+    margin: 5rem 0 0 0 ;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.author{
+    font-size: 2rem;
+}
+.text{
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+.Btn{
+    background-color: #5e35b1;
+    border: none;
+    color: white;
+    padding: .5rem .8rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: .3rem;
+}
+.Btn:hover{
+    background-color: #ffa726;
+}

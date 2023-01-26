@@ -1,0 +1,56 @@
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form > p {
+    width: 15rem;
+    height: 15rem;
+    border: .1rem solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sortBtn{
+    background-color: #5e35b1;
+    border: none;
+    color: white;
+    padding: .7rem 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .5s;
+    border-radius: .3rem;
+}
+.sortBtn:hover{
+    background-color: #ffa726;
+}
+
+.row, .tableNames{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+.tableNames>*{
+    margin: 5rem 0 0 0 ;
+    font-size: 2rem;
+    background-color: #eeeeee;
+}
+.author {
+    border-right: .1rem solid #5e35b1;
+    border-bottom: .1rem solid #5e35b1;
+    padding: 0.5rem;
+}
+.text{
+    border-bottom: .1rem solid #5e35b1;
+    padding: 0.5rem;
+}
